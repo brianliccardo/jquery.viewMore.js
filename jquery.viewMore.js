@@ -1,5 +1,5 @@
 /*!
- * viewMore v0.2.0
+ * viewMore v0.2.1
  */
 ;(function($) {
 	var instance = 1;
@@ -13,7 +13,7 @@
 		if (lines > options.maxLines) {
 			var visHeight = (lh * options.maxLines);
 			var origHeight = $container.height();
-			$container.css('height', visHeight).css('overflow','hidden').css('margin-bottom',lh);
+			$container.css('height', visHeight).css('overflow','hidden');
 			
 			// wrap container in div
 			$container.wrap('<div id="'+wrapperId+'"></div>');
